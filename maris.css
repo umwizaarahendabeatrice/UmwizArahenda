@@ -1,0 +1,281 @@
+/* St Maris High School - styles.css */
+
+:root {
+  --navy: #0a2060;
+  --navy-dark: #081a55;
+  --gold: #ffcc00;
+  --text: #333;
+  --muted: #555;
+  --bg: #f5f7fb;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  font-weight: bold;
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.nav a.active {
+  color: var(--navy);
+  border-bottom: 3px solid var(--gold);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  background: var(--gold);
+  color: #000;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+/* Hero */
+.hero {
+  background-image: url('./Images/students1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--white);
+  border-radius: 15px;
+  padding: 60px 0;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.514);
+   border-radius: 15px;
+}
+.hero .container{
+  position: relative;
+  z-index: 1;
+   border-radius: 15px;
+}
+.hero small {
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.hero h1 {
+  color: var(--gold);
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 6px 0 12px;
+}
+
+.hero p {
+  margin-bottom: 24px;
+}
+
+.hero .btn-outline {
+  margin-left: 8px;
+}
+
+/* Sections */
+.section {
+  padding: 40px 0;
+}
+
+.section h2 {
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.section-white {
+  background: var(--white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e3e7ef;
+}
+
+.card h3 {
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+/* Stats */
+.stats {
+  background: var(--navy);
+  color: var(--white);
+  padding: 24px 0;
+}
+
+.stats .grid {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 22px;
+  color: var(--gold);
+}
+
+/* About */
+.about-list {
+  list-style: none;
+  margin-top: 12px;
+}
+
+.about-list li {
+  margin-bottom: 6px;
+}
+
+.about-list li::before {
+  content: "✔ ";
+  color: var(--navy);
+}
+
+/* Programs */
+.programs .card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.programs img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.programs .card div {
+  padding: 14px;
+}
+
+/* Principal */
+.principal {
+  background: var(--navy-dark);
+  color: var(--white);
+  padding: 40px 0;
+}
+
+.principal .container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.principal h2 {
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.principal .name {
+  color: var(--gold);
+  margin-top: 8px;
+}
+
+/* Footer */
+.footer {
+  background: #05103a;
+  color: #bbb;
+  padding: 30px 0;
+  font-size: 14px;
+}
+
+.footer .grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.footer strong {
+  color: var(--white);
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .principal .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .btn-outline {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
