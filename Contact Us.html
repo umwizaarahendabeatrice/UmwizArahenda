@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lsang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - ST.MARIS HIGH SCHOOL ENTEBBE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+body{background:rgba(175, 200, 238, 0.774);}
+/* HEADER */
+header{background:#0a1129;color:rgba(248, 250, 248, 0.993);display:flex;justify-content:space-between;align-items:center;padding:12px 5%;flex-wrap:wrap;}
+.logo{display:flex;align-items:center;gap:12px;}
+.badge{width:50px;height:60px;background:#e0c9cf;border-radius:0 0 24px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#0f1320;font-weight:900;border:2px solid #ffb02e;}
+.logo-text h2{font-size:22px;line-height:1.1;}
+.logo-text p{font-size:11px;letter-spacing:2px;color:#9ca3af;margin-top:2px;}
+nav{display:flex;align-items:center;gap:20px;}
+nav a{color:#cbd5e1;text-decoration:none;font-size:16px;font-weight:600;}
+nav a.active{color:white;border-bottom:3px solid #f97316;padding-bottom:4px;}
+.apply{background:#f97316;color:white!important;padding:8px 18px;border-radius:20px;font-weight:bold;text-decoration:none;}
+
+/* HERO */
+.hero{position:relative;background:#02060e71;overflow:hidden;padding:42px 5%;text-align:center;color:white;}
+.hero::before{content:"";position:absolute;right:0;top:0;width:45%;height:100%;background:url('https://images.unsplash.com/photo-1562774053-701939374585?w=800') center/cover;opacity:0.35;}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#02347e 60%,rgba(1, 9, 22, 0.466));}
+.hero *{position:relative;z-index:1;}
+.hero h1{color:#ff7f1a;font-size:72px;font-weight:900;letter-spacing:1px;}
+.hero p{font-size:18px;margin-top:4px;font-weight:600;}
+.hero p.small{font-size:20px;font-weight:400;}
+
+/* CONTENT */
+.wrap{max-width:1150px;margin:30px auto;display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:0 5%;}
+h3.section-title{font-size:30px;margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+label{font-size:16px;font-weight:800;display:block;margin:16px 0 8px;}
+input,textarea{width:100%;background:#a8a8ff;border:none;border-radius:8px;padding:12px 14px;font-size:14px;outline:none;}
+textarea{height:100px;resize:none;}
+.btn-send{background:#f94b16;color:white;border:none;width:100%;padding:13px;border-radius:20px;font-weight:800;font-size:15px;cursor:pointer;margin-top:16px;}
+.btn-send:hover{background:#ea580c;}
+
+/* DETAILS */
+.detail{display:flex;gap:10px;margin-bottom:18px;}
+.detail i{color:#dfab02;font-size:30px;margin-top:6px;width:30px;}
+.detail h4{color:#e9a208;font-size:16px;margin-bottom:4px;}
+.detail p{font-size:16px;color:#111827;line-height:1.6;}
+.detail p a{color:#f97316;text-decoration:underline;}
+.map-box{margin-top:14px;background:rgba(255, 136, 255, 0.637);border-radius:10px;padding:12px;display:flex;align-items:center;gap:10px;border:1px solid #e5e7eb;}
+.map-box i{font-size:24px;}
+.map-box b{font-size:15px;}
+.map-box span{font-size:14px;color:#788399;}
+
+/* SOCIAL */
+.social-wrap{background:#f1f2f4;padding:24px 5%;text-align:center;margin-top:10px;}
+.social-wrap h2{font-size:24px;}
+.social-wrap p{font-size:13px;color:#4b5563;margin-top:4px;}
+.social-grid{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px;}
+.social-btn{display:flex;align-items:center;gap:7px;padding:9px 18px;border-radius:20px;text-decoration:none;color:white;font-size:13px;font-weight:700;}
+.fb{background:#1a4092;} .ig{background:linear-gradient(90deg,#feda75,#d62976,#4f5bd5);} .tw{background:#5aa9e6;} .tk{background:#000;} .yt{background:#e53935;} .wa{background:#25d366;}
+footer{background:#0f1320;color:#9ca3af;text-align:center;padding:14px;font-size:11px;}
+
+@media(max-width:800px){
+.wrap{grid-template-columns:1fr;gap:30px;}
+.hero h1{font-size:30px;}
+header{flex-direction:column;gap:10px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="./Images/badge.jpg" alt="School Badge" style="font-size:30px;">
+    <div class="logo-text">
+      <h2>St Maris High School - Entebbe</h2>
+      <p>EST. 1987 • KAMPALA DISTRICT</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About Us.html">About</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Academic.html">Academics</a>
+    <a href="Contact Us.html" class="active">Contact</a>
+    <a href="#" class="apply">Apply Now</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>CONTACT US</h1>
+  <p>We'd Love To Hear From You —</p>
+  <p class="small">St. Maris High School • Kampala District</p>
+</div>
+
+<div class="wrap">
+  <!-- LEFT FORM -->
+  <div>
+    <h3 class="section-title"><i class="fa-regular fa-envelope"></i> Send Us a Message</h3>
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your full name">
+    <label>Email Address</label>
+    <input type="email" placeholder="you@example.com">
+    <label>Subject</label>
+    <input type="text" placeholder="How can we assist you?">
+    <label>Message</label>
+    <textarea placeholder="Type your message here..."></textarea>
+    <button class="btn-send"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+  </div>
+
+  <!-- RIGHT DETAILS -->
+  <div>
+    <h3 class="section-title"><i class="fa-solid fa-circle-info"></i> Contact Details</h3>
+    <div class="detail">
+      <i class="fa-regular fa-location-dot"></i>
+      <div><h4>Location</h4><p>Entebbe, Kampala District, Uganda</p></div>
+    </div>
+    <div class="detail">
+      <i class="fa-solid fa-phone"></i>
+      <div><h4>Phone</h4><p>+256 700 123 456<br>+256 772 987 654</p></div>
+    </div>
+    <div class="detail">
+      <i class="fa-regular fa-envelope"></i>
+      <div><h4>Email</h4><p>info@stmarishigh.ac.ug</p></div>
+    </div>
+    <div class="detail">
+      <i class="fa-regular fa-clock"></i>
+      <div><h4>Working Hours</h4><p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p></div>
+    </div>
+
+    <div class="map-box">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <b>St Maris High School, Entebbe - Kampala District</b><br>
+        <span>Map View</span><br>
+        <a href="https://maps.google.com" style="color:#f97316;font-size:12px;">View on Google Maps</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="social-wrap">
+  <h2>Connect With St Maris</h2>
+  <p>Follow us on our social platforms for updates, news and events</p>
+  <div class="social-grid">
+    <a href="#" class="social-btn fb"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+    <a href="#" class="social-btn ig"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a href="#" class="social-btn tw"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+    <a href="#" class="social-btn tk"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+    <a href="#" class="social-btn yt"><i class="fa-brands fa-youtube"></i> YouTube</a>
+    <a href="#" class="social-btn wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+  </div>
+</div>
+
+<footer>
+  © 2024 Saint Mary's High School - Tebe. All Rights Reserved. | Privacy Policy | Terms of Service<br>
+  Proudly Serving Mukono District, Uganda
+</footer>
+
+</body>
+</html>

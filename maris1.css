@@ -1,0 +1,54 @@
+/* Extra styles for About Page - still uses your style.css */
+.about-hero{
+  background: linear-gradient(rgba(12,44,110,0.8), rgba(12, 45, 110, 0.384)), url('');
+  background-size:fill; background-position:center;
+  padding:55px 20px; text-align:center; color:rgb(255, 255, 255);
+}
+.about-hero h1{ color:#ffcb2f; font-size:50px; font-weight:800; }
+.about-hero p{ margin-top:8px; font-size:20px; font-weight:600; }
+
+.mission-row{
+  display:flex; justify-content:space-between; gap:20px;
+  max-width:1200px; margin:30px auto; padding:0 20px;
+}
+.mission-col{
+  flex:1; text-align:center; background:white; padding:15px;
+  border-right:2px solid #eee;
+}
+.mission-col:last-child{ border-right:none; }
+.icon-circle{
+  width:65px; height:65px; background:#ffcb2f; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto 12px; font-size:50px; color:#0a2a70;
+}
+.mission-col h2{ color:#0a2a70; font-size:30px; margin-bottom:10px; }
+.mission-col p, .mission-col ul{
+  font-size:16px; line-height:1.5; text-align:left; color:#222;
+}
+.mission-col ul{ list-style:disc; padding-left:18px; }
+
+.stats-bar{
+  background:#0e3e9e; color:white; display:flex;
+  justify-content:space-around; padding:20px 12px; text-align:center;
+}
+.stats-bar h2{ color:#ffeb3b; font-size:36px; font-weight:800; }
+.stats-bar p{ font-size:16px; font-weight:600; margin-top:2px; }
+
+.principal-box{
+  background:#082360; margin:16px; border-radius:10px;
+  padding:15px 25px; display:flex; align-items:center; gap:20px;
+  color:white;
+}
+.principal-box img{
+  width:110px; height:110px; border-radius:50%; object-fit:cover;
+}
+.principal-box h3{ color:#ffcb2f; text-align:center; margin-bottom:10px; font-size:20px;}
+.principal-box p{ font-size:16px; line-height:2; opacity:0.95; }
+.principal-box b{ color:#ffcb2f; display:block; margin-top:8px; }
+
+@media(max-width:768px){
+  .mission-row{ flex-direction:column; }
+  .mission-col{ border-right:none; border-bottom:1px solid #eee; }
+  .principal-box{ flex-direction:column; text-align:center; }
+  .stats-bar{ flex-wrap:wrap; gap:20px; }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academics - ST MARIS HIGH SCHOOL/title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', Arial, sans-serif;}
+body{background:#ffffff;color:#1e293b;}
+
+header{background:#0f172a;color:white;padding:16px 2%;display:flex;justify-content:space-between;align-items:center;}
+header h2{font-size:16px;font-weight:bold;}
+header nav a{color:#94a3b8;text-decoration:none;margin-left:12px;font-size:12px;}
+header nav a.active{color:white;}
+
+.hero{background:#1e3a8a;display:flex;align-items:center;padding:25px 2%;gap:30px;}
+.hero img{width:52%;border-radius:2px;object-fit:cover;}
+.hero-text{flex:1;}
+.hero-text h1{color:#f59e0b;font-size:36px;font-weight:800;margin-bottom:8px;letter-spacing:1px;}
+.hero-text .p1{color:white;font-size:15px;line-height:1.3;}
+.hero-text .p2{color:#93c5fd;font-size:12px;margin-top:15px;line-height:1.4;}
+.btn{display:inline-block;background:#f59e0b;color:#0f172a;padding:8px 14px;font-weight:bold;margin-top:14px;text-decoration:none;font-size:12px;}
+
+.uneb-title{text-align:center;margin-top:30px;}
+.uneb-title h2{font-size:22px;color:#0f172a;font-weight:800;}
+.uneb-title p{font-size:12px;color:#6b7280;margin-top:5px;}
+
+.results-wrapper{display:flex;justify-content:center;gap:60px;padding:25px 3%;flex-wrap:wrap;}
+.result-card{width:380px;background:#f1f5f5;border:1.5px solid #1e3a8a;padding:6px;}
+.card-header{background:#1e3a8a;color:white;text-align:center;padding:10px;font-weight:bold;font-size:13px;}
+.card-body{padding:10px;}
+.highlight{text-align:center;color:#f59e0b;font-size:26px;font-weight:800;margin:12px 0 2px;}
+.sub-highlight{text-align:center;font-size:11px;color:#333;margin-bottom:12px;}
+.result-card table{width:100%;border-collapse:collapse;background:white;border:1px solid #d1d5db;}
+.result-card th{background:#0f172a;color:white;padding:7px 10px;font-size:11px;text-align:left;}
+.result-card td{padding:7px 10px;font-size:11px;border-bottom:1px solid #e5e7eb;}
+.result-card td:last-child{font-weight:bold;text-align:center;}
+.green-note{color:#1e5a3a;font-size:10px;font-weight:bold;margin-top:12px;}
+
+@media(max-width:768px){
+.hero{flex-direction:column;}
+.hero img{width:100%;}
+.results-wrapper{gap:20px;}
+.result-card{width:100%;}
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>ST MARIS HIGH SCHOOL - Entebbe</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About Us.html">About</a>
+     <a href="Gallery.html">Gallery</a>
+    <a href="Academic.html" class="active">Academics</a>
+    <a href="Contact Us.html">Contact</a>
+    <a class="btn" href="Contact Us.html">Apply now</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="./Images/infrastructure.webp" alt="Our Students in front of main block">
+  <div class="hero-text">
+    <h1>ACADEMICS</h1>
+    <p class="p1">Excellence in Education,<br>Innovation in Learning</p>
+    <p class="p2">Secondary School - Entebbe<br>Quality Education, Discipline & Technology</p>
+    <a href="#" class="btn">Admissions 2026</a>
+  </div>
+</div>
+
+<div class="uneb-title">
+  <h2>UNEB Results 2025 - Our Performance</h2>
+  <p>Secondary School - UCE & UACE Excellent Performance</p>
+</div>
+
+<div class="results-wrapper">
+  <!-- UCE BOX -->
+  <div class="result-card">
+    <div class="card-header">UCE 2025 Results</div>
+    <div class="card-body">
+      <div class="highlight">100% Pass</div>
+      <div class="sub-highlight">132 Candidates</div>
+      <table>
+        <tr><th>Division</th><th>No. of Students</th></tr>
+        <tr><td>Division 1</td><td>30</td></tr>
+        <tr><td>Division 2</td><td>72</td></tr>
+        <tr><td>Division 3</td><td>6</td></tr>
+        <tr><td>Division 4</td><td>0</td></tr>
+      </table>
+      <div class="green-note">Best: 8 in 8 | 30 First Grades | Sciences Excelled</div>
+    </div>
+  </div>
+
+  <!-- UACE BOX -->
+  <div class="result-card">
+    <div class="card-header">UACE 2025 Results</div>
+    <div class="card-body">
+      <div class="highlight">100% Pass</div>
+      <div class="sub-highlight">48 Candidates Joined University</div>
+      <table>
+        <tr><th>Points</th><th>No. of Students</th></tr>
+        <tr><td>20 Points</td><td>3</td></tr>
+        <tr><td>19 Points</td><td>4</td></tr>
+        <tr><td>18 Points</td><td>8</td></tr>
+        <tr><td>Below 15 Points</td><td>39</td></tr>
+      </table>
+      <div class="green-note">Best: 20 Points (PCM) | Courses: Medicine, Law, Engineering</div>
+    </div>
+  </div>
+</div>
+
+<div style="height:50px;"></div>
+
+</body>
+</html>
